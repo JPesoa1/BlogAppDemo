@@ -5,5 +5,5 @@ import com.example.blogappdemo.data.model.Post
 import kotlinx.coroutines.flow.Flow
 
 interface HomeScreenRepo {
-    suspend fun getLatestPosts(): Flow<Result<List<Post>>> //Dentro del sealed class
+    suspend fun getLatestPosts(): Result<List<Post>> //Dentro del sealed class
 }
